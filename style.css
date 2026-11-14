@@ -1266,3 +1266,617 @@ h3,
         transform: none;
     }
 }
+
+/* ===== ИГРОВАЯ ПОЛКА ===== */
+
+.games-corner {
+    margin: 65px 0;
+}
+
+.games-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.games-heading > span {
+    color: #762c3b;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.games-heading h2 {
+    color: #762c3b;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.games-heading p {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.game-card {
+    background: #e9e0d2;
+    border: 2px solid #762c3b;
+    box-shadow: 5px 5px #171516;
+    transition: transform .25s ease;
+}
+
+.game-card:nth-child(2) {
+    transform: translateY(12px) rotate(1deg);
+}
+
+.game-card:nth-child(odd) {
+    transform: rotate(-1deg);
+}
+
+.game-card:hover {
+    transform: translateY(-6px) rotate(0deg);
+}
+
+.game-cover {
+    min-height: 165px;
+    padding: 15px;
+    background: #762c3b;
+    color: #e9e0d2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.game-cover > span {
+    text-align: left;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 10px;
+}
+
+.game-cover strong {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+.game-cover > div {
+    font-size: 25px;
+}
+
+.game-cover-two {
+    background: #302b2d;
+}
+
+.game-cover-three {
+    background: #8c5961;
+}
+
+.game-info {
+    padding: 18px;
+}
+
+.game-info > span {
+    color: #762c3b;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.game-info h3 {
+    color: #762c3b;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.game-info p {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.games-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 12px 5px;
+    border-top: 1px dashed #762c3b;
+    border-bottom: 1px dashed #762c3b;
+    color: #762c3b;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+/* Версия для телефона */
+@media (max-width: 650px) {
+    .games-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .game-card:nth-child(2),
+    .game-card:nth-child(odd) {
+        transform: none;
+    }
+}
+
+/* ===== ТВОРЧЕСКАЯ МАСТЕРСКАЯ ===== */
+
+.creative-corner {
+    margin: 70px 0;
+}
+
+.creative-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.creative-heading > span {
+    color: #762c3b;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.creative-heading h2 {
+    color: #762c3b;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.creative-heading p {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.creative-board {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 22px;
+    padding: 35px;
+    background: #302b2d;
+    border: 3px solid #762c3b;
+    box-shadow: 7px 7px #171516;
+}
+
+.creative-card {
+    position: relative;
+    min-height: 190px;
+    padding: 25px;
+    background: #e9e0d2;
+    color: #302b2d;
+    box-shadow: 4px 4px #171516;
+    transition: transform .25s ease;
+}
+
+.creative-card:hover {
+    transform: translateY(-6px) rotate(1deg);
+}
+
+.creative-card > span {
+    color: #762c3b;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.creative-symbol {
+    margin: 15px 0 5px;
+    color: #762c3b;
+    font-size: 30px;
+}
+
+.creative-card h3 {
+    color: #762c3b;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    margin: 8px 0;
+}
+
+.creative-card p {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.creative-card-dark {
+    background: #762c3b;
+    color: #e9e0d2;
+    transform: rotate(1deg);
+}
+
+.creative-card-dark > span,
+.creative-card-dark .creative-symbol,
+.creative-card-dark h3 {
+    color: #e9e0d2;
+}
+
+.creative-card-small {
+    grid-column: 1 / -1;
+    min-height: 145px;
+    background: #e9e0d2;
+    transform: rotate(-0.5deg);
+}
+
+.creative-sticker {
+    position: absolute;
+    right: 15px;
+    top: -18px;
+    padding: 12px;
+    background: #e9e0d2;
+    color: #762c3b;
+    border: 2px dashed #762c3b;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(8deg);
+}
+
+.creative-tape {
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: 8px 18px;
+    background: #e9e0d2;
+    color: #762c3b;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    transform: rotate(-2deg);
+}
+
+/* Телефонная версия */
+@media (max-width: 650px) {
+    .creative-board {
+        grid-template-columns: 1fr;
+        padding: 25px 18px;
+        gap: 18px;
+    }
+
+    .creative-card-small,
+    .creative-tape {
+        grid-column: auto;
+    }
+
+    .creative-card-dark,
+    .creative-card-small {
+        transform: none;
+    }
+
+    .creative-sticker {
+        right: 5px;
+        top: -22px;
+    }
+}
+
+/* ===== ФИНАЛЬНАЯ ПАНЕЛЬ УВЛЕЧЕНИЙ ===== */
+
+.hobbies-ending {
+    margin: 65px 0 35px;
+    padding: 30px 20px;
+    text-align: center;
+    background: #302b2d;
+    color: #e9e0d2;
+    border: 2px dashed #762c3b;
+    box-shadow: 6px 6px #171516;
+}
+
+.ending-decoration {
+    color: #e9e0d2;
+    font-size: 19px;
+    letter-spacing: 5px;
+}
+
+.hobbies-ending > p {
+    margin-top: 20px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.hobbies-ending h2 {
+    margin: 12px 0;
+    color: #e9e0d2;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+}
+
+.hobbies-ending > span {
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 9px;
+    letter-spacing: 1px;
+    opacity: .75;
+}
+
+/* ===== СЕКРЕТНЫЙ АРХИВ ===== */
+
+.secret-welcome {
+    position: relative;
+    margin: 35px 0;
+    padding: 40px 25px;
+    text-align: center;
+    background: #302b2d;
+    color: #e9e0d2;
+    border: 2px solid #762c3b;
+    box-shadow: 7px 7px #171516;
+}
+
+.secret-welcome > span,
+.secret-section-heading > span {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.secret-symbol {
+    margin: 15px 0;
+    font-size: 45px;
+    color: #e9e0d2;
+}
+
+.secret-welcome h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.secret-welcome p {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 11px;
+    line-height: 1.9;
+}
+
+.classified-stamp {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 9px 15px;
+    color: #e9e0d2;
+    border: 2px dashed #e9e0d2;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transform: rotate(-5deg);
+}
+
+/* СЕКРЕТНЫЕ ПАПКИ */
+
+.secret-files {
+    margin: 60px 0;
+}
+
+.secret-section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #762c3b;
+}
+
+.secret-section-heading h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.secret-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.secret-file {
+    position: relative;
+    padding: 22px;
+    min-height: 220px;
+    background: #e9e0d2;
+    border: 2px solid #302b2d;
+    box-shadow: 5px 5px #171516;
+    transition: transform .25s ease;
+}
+
+.secret-file:nth-child(2) {
+    transform: translateY(12px);
+}
+
+.secret-file:hover {
+    transform: translateY(-5px) rotate(-1deg);
+}
+
+.file-icon {
+    color: #762c3b;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.secret-file > span {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 9px;
+    color: #762c3b;
+}
+
+.secret-file h3 {
+    color: #762c3b;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    margin: 12px 0;
+}
+
+.secret-file p {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+.file-stamp {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 8px;
+    border: 1px dashed #762c3b;
+    color: #762c3b;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+/* КОНВЕРТ */
+
+.secret-envelope-section {
+    margin: 65px 0;
+    padding: 35px 20px;
+    background: #762c3b;
+    box-shadow: 6px 6px #171516;
+}
+
+.secret-envelope {
+    max-width: 550px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    background: #e9e0d2;
+    border: 2px dashed #302b2d;
+    transform: rotate(-1deg);
+}
+
+.envelope-top,
+.envelope-bottom {
+    color: #762c3b;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.envelope-symbol {
+    margin: 20px 0;
+    font-size: 45px;
+    color: #762c3b;
+}
+
+.secret-envelope h2 {
+    color: #762c3b;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+}
+
+.secret-envelope p {
+    margin: 15px 0 25px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+/* ЗАВЕРШЕНИЕ */
+
+.secret-ending {
+    margin: 60px 0 35px;
+    padding: 30px 20px;
+    text-align: center;
+    background: #302b2d;
+    color: #e9e0d2;
+    border: 2px dashed #762c3b;
+    box-shadow: 6px 6px #171516;
+}
+
+.secret-ending h2 {
+    margin: 18px 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+}
+
+.secret-ending p,
+.secret-ending span {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.secret-ending span {
+    display: block;
+    margin-top: 20px;
+    opacity: .7;
+}
+
+/* МОБИЛЬНАЯ ВЕРСИЯ */
+
+@media (max-width: 650px) {
+    .secret-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .secret-file:nth-child(2) {
+        transform: none;
+    }
+
+    .secret-welcome h2 {
+        font-size: 34px;
+    }
+
+    .secret-envelope {
+        padding: 22px
+
+
+15px;
+        transform: none;
+    }
+}
+
+/* ===== ЕДИНЫЕ РАЗДЕЛИТЕЛИ САЙТА ===== */
+
+.profile-panel::after,
+.facts-section::after,
+.favourites-section::after,
+.diary-section::after,
+
+.projects-welcome::after,
+.projects-grid::after,
+.projects-note::after,
+
+.secret-welcome::after,
+.secret-files::after,
+.secret-envelope-section::after {
+
+    content: "✦ ─────── ♡ ─────── ✦";
+
+    display: block;
+    width: 100%;
+    margin: 40px auto 0;
+
+    text-align: center;
+    color: #762c3b;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+
+    opacity: .85;
+}
+
+/* ===== ЭФФЕКТЫ НАВИГАЦИИ ===== */
+
+.main-navigation a {
+    display: inline-block;
+    transition: color .2s ease, transform .2s ease;
+}
+
+.main-navigation a:hover {
+    background: transparent; /* не заливаем кнопку */
+    color: #762c3b; /* бордовый текст */
+    transform: translateY(-3px); /* лёгкое движение вверх */
+
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 5px;
+
+    box-shadow: none;
+}
